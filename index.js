@@ -1,4 +1,6 @@
 const inquirer = require("inquirer");
+const api = require("./utils/api");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 const questions = [
 {
@@ -15,18 +17,32 @@ const questions = [
     type: 'input',
     message: 'Give a brief description of your project',
     name: 'project-description'
+},
+{
+    type: 'input',
+    message: 'How do you install?',
+    name: 'installation'
+},
+{
+    type:'input',
+    message: 'Who contributed to the project?',
+    name: 'contributers'
 }
 
 ];
 
-inquirer
-    .prompt(questions)
-    .then
+
 function writeToFile(fileName, data) {
 }
 
 function init() {
-
+    inquirer
+        .prompt(questions)
+        .then(function(answers){
+            api
+            .getUser(answers.username)
+            .then()
+        })
 }
 
 init();

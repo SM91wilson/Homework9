@@ -4,9 +4,6 @@ const api = {
   getUser(username) {
     axios
     .get(queryUrl)
-    .then(function(userData){
-      console.log(userData.data)
-    })
   }
 };
 
