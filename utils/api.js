@@ -1,10 +1,16 @@
 const axios = require('axios')
-var queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
+
 const api = {
-  getUser(username) {
-    axios
-    .get(queryUrl)
-  }
-};
+  async getUser(user) {
+    await axios
+    .get(`https://api.github.com/users/${user}`)
+    .then(function(response){
+      console.log(response.data.avatar_url)
+    })
+    
+    .catch((err) =>{
+      console.log("error")
+    })
+}};
 
 module.exports = api;
