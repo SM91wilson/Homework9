@@ -5,13 +5,13 @@ function generateMarkdown(answers, res) {
 
 ## Contents
 
-[Description](#Description)
-[License](#License)
-[Usage](#Usage)
-[Installation](#Installation)
-[Testing](#Testing)
-[Contributers](#Contributers)
-[Questions](#Questions)
+- [Description](#Description)
+- [License](#License)
+- [Usage](#Usage)
+- [Installation](#Installation)
+- [Testing](#Testing)
+- [Contributers](#Contributers)
+- [Questions](#Questions)
 
 ## Description
 
@@ -20,6 +20,7 @@ ${answers.projectDescription}
 ## License
 
 ${licenseBadge(answers.license)}
+This project is under a ${answers.license} license
 
 ## Usage
 
@@ -42,12 +43,12 @@ ${answers.contributers}
 
 ## Questions
 
-[!user avatar](${answers.username.avatar_url})
+
 `;
 }
 
 function licenseBadge(license){
-  `[![MIT license](https://img.shields.io/badge/License-${license}-blue.svg)]`
+  return `[![MIT license](https://img.shields.io/badge/License-${license}-blue.svg)]`
 }
 
 module.exports = generateMarkdown;

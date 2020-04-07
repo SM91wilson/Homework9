@@ -52,7 +52,7 @@ const questions = [
 
 // function for writing the readme file, accepts the name of the file and the data that will populate it
 function writeToFile(fileName, data) {
-    // path.join creates a working file path and process.cwd allows it to be made in the current directory
+    // path.join creates a working file path combining the two arguments together and process.cwd allows it to be made in the current directory
     fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
@@ -62,6 +62,7 @@ async function init() {
         .prompt(questions)
         .then(answers => {
             console.log(answers);
+            console.log(answers.license);
             
             // calling the api module from api.js using the username answer from the inquirer
             api
