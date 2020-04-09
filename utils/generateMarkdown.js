@@ -1,4 +1,7 @@
 function generateMarkdown(answers, res) {
+  // console.log(answers.username.avatar_url)
+  console.log(res);
+  console.log(answers);
   return `
   
 # ${answers.projectTitle}
@@ -43,7 +46,8 @@ ${answers.contributers}
 
 ## Questions
 
-
+[1]: ${res.avatar_url}
+![Alt][1]
 `;
 }
 

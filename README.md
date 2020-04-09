@@ -1,6 +1,6 @@
 
   
-# o
+# 
 
 ## Contents
 
@@ -14,31 +14,33 @@
 
 ## Description
 
-p
+
 
 ## License
 
-This project is under a [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)] license
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)]
+This project is under a MIT license
 
 ## Usage
 
-o
+
 
 ## Installation
 
 Instructions for installing:
-p
+
 
 ## Testing
 
 Instructions for running tests:
 
-o
+
 
 ## Contributers
 
-p
+
 
 ## Questions
 
-
+[1]: https://avatars3.githubusercontent.com/u/60154316?v=4
+![Alt][1]
