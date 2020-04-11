@@ -1,5 +1,5 @@
 function generateMarkdown(answers, res) {
-  
+  console.log(answers)
   return `
   
 # ${answers.projectTitle}
@@ -47,7 +47,7 @@ ${answers.contributers}
 [1]: ${res.avatar_url}
 ![Alt][1]
 
-${res.html_url}
+My profile can be found at: ${res.html_url}
 `;
 }
 

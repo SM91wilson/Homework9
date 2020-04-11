@@ -61,12 +61,12 @@ function init() {
     inquirer
         .prompt(questions)
         .then(answers => {
-
+        
             // calling the api module from api.js using the username answer from the inquirer
             api
                 .getUser(answers.username)
                 .then(function (res) {
-                    console.log(res)
+                    
                     // passing the information from the inquirer and the axios into the generateMarkdown function and using it to write the readme
                     writeToFile("README.md", generateMarkdown(answers, res.data))
 
